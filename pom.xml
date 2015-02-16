@@ -14,6 +14,16 @@
 	<artifactId>star-boot</artifactId>
 	<packaging>pom</packaging>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-boot-app</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<profiles>
 		<profile>
 			<id>star-env</id>
@@ -37,6 +47,29 @@
 				</repository>
 			</repositories>
 		</profile>
+		<profile>
+			<id>star-app</id>
+			<activation>
+				<file>
+					<exists>${basedir}/src/main/star/star-app.properties</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>star</groupId>
+					<artifactId>star-boot-app</artifactId>
+					<version>0.0.1-SNAPSHOT</version>
+				</dependency>
+			</dependencies>
+			<properties>
+				<jsw.mainClass>star.auto.StarMain</jsw.mainClass>
+			</properties>
+			
+		</profile>
 	</profiles>
+
+	<modules>	
+		<module>app</module>
+	</modules>
 
 </project>

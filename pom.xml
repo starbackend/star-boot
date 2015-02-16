@@ -16,6 +16,7 @@
 
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
+		<rpm.app.portDiscriminator>${star-env.portDiscriminator}</rpm.app.portDiscriminator>
 	</properties>
 
 	<dependencyManagement>
@@ -52,49 +53,6 @@
 			</repositories>
 			<build>
 				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-dependency-plugin</artifactId>
-						<version>2.10</version>
-						<executions>
-							<execution>
-								<id>star-env-unpack</id>
-								<phase>initialize</phase>
-								<goals>
-									<goal>unpack</goal>
-								</goals>
-								<configuration>
-									<artifactItems>
-										<artifactItem>
-											<groupId>star</groupId>
-											<artifactId>star-env</artifactId>
-											<includes>star-env.properties, star-env-rules.properties</includes>
-										</artifactItem>
-									</artifactItems>
-									<outputDirectory> ${project.build.directory}/star-env-unpack</outputDirectory>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>properties-maven-plugin</artifactId>
-						<version>1.0-alpha-2</version>
-						<executions>
-							<execution>
-								<phase>initialize</phase>
-								<goals>
-									<goal>read-project-properties</goal>
-								</goals>
-								<configuration>
-									<files>
-										<file>${project.build.directory}/star-env-unpack/star-env.properties</file>
-										<file>${project.build.directory}/star-env-unpack/star-env-rules.properties</file>
-									</files>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
 				</plugins>
 			</build>
 			

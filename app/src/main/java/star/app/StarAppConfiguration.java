@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource(value={"classpath:/star-app.properties", "file:conf/star-app.properties"}, ignoreResourceNotFound=true)
+@PropertySource(value="file:conf/star-app.properties", ignoreResourceNotFound=true)
 @Import(CwatchEnvConfiguration.class)
 public class StarAppConfiguration {
 

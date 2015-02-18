@@ -16,7 +16,6 @@
 
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
-		<rpm.app.portDiscriminator>${star-env.portDiscriminator}</rpm.app.portDiscriminator>
 	</properties>
 
 	<dependencyManagement>

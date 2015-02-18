@@ -18,7 +18,6 @@ import org.springframework.context.annotation.Import;
 public class StarMain implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		System.out.println(System.getProperty("user.dir"));
 		SpringApplication.run(StarMain.class, args);
 	}
 	

@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
+import org.springframework.boot.context.config.ConfigFileApplicationListener;
+import org.springframework.context.annotation.Import;
 
 import star.app.StarAppConfiguration;
-
-import org.springframework.context.annotation.Import;
 
 @SpringBootApplication(exclude={
 		SecurityAutoConfiguration.class, 
@@ -18,6 +18,7 @@ import org.springframework.context.annotation.Import;
 public class StarMain implements CommandLineRunner {
 
 	public static void main(String[] args) {
+		System.setProperty(ConfigFileApplicationListener.CONFIG_LOCATION_PROPERTY, "file:./conf/");
 		SpringApplication.run(StarMain.class, args);
 	}
 	

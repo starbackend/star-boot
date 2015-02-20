@@ -17,6 +17,17 @@ import star.app.StarAppConfiguration;
 @Import(StarAppConfiguration.class)
 public class StarMain implements CommandLineRunner {
 
+	static {
+		System.setProperty(
+				"java.io.tmpdir",
+				"tmp"
+		);
+		System.setProperty(
+				"org.apache.activemq.default.directory.prefix",
+				System.getProperty("org.apache.activemq.default.directory.prefix", "") + "data/"
+		);
+	}
+	
 	public static void main(String[] args) {
 		System.setProperty(ConfigFileApplicationListener.CONFIG_LOCATION_PROPERTY, "file:./conf/");
 		SpringApplication.run(StarMain.class, args);

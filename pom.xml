@@ -80,7 +80,7 @@
 				<plugins>
 				</plugins>
 			</build>
-			
+
 		</profile>
 		<profile>
 			<id>star-app</id>
@@ -101,6 +101,15 @@
 			</properties>
 		</profile>
 	</profiles>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.cwatch</groupId>
+			<artifactId>cwatch-boot</artifactId>
+			<classifier>project</classifier>
+			<type>tar.gz</type>
+		</dependency>
+	</dependencies>
 
 	<modules>
 		<module>app</module>

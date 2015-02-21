@@ -25,6 +25,13 @@
 				<artifactId>star-boot-app</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-boot</artifactId>
+				<type>tar.gz</type>
+				<classifier>project</classifier>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -57,6 +64,11 @@
 	<profiles>
 		<profile>
 			<id>star-env</id>
+			<activation>
+				<file>
+					<exists>${basedir}/src/main/star/star-app.properties</exists>
+				</file>
+			</activation>
 			<dependencies>
 				<dependency>
 					<groupId>star</groupId>
@@ -76,11 +88,6 @@
 					<url>https://cwatch.org/repo/priv-release-local</url>
 				</repository>
 			</repositories>
-			<build>
-				<plugins>
-				</plugins>
-			</build>
-
 		</profile>
 		<profile>
 			<id>star-app</id>
@@ -112,7 +119,7 @@
 	</dependencies>
 
 	<modules>
-		<module>app</module>
+		<module>base</module>
 	</modules>
 
 </project>

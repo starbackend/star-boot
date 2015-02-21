@@ -18,7 +18,6 @@
 			<artifactId>star-boot</artifactId>
 			<type>tar.gz</type>
 			<classifier>project</classifier>
-			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

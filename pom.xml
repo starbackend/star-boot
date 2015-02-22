@@ -72,7 +72,7 @@
 			<dependencies>
 				<dependency>
 					<groupId>star</groupId>
-					<artifactId>star-env</artifactId>
+					<artifactId>star-env-defaults</artifactId>
 					<version>0.0.1-SNAPSHOT</version>
 				</dependency>
 			</dependencies>

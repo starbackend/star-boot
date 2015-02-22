@@ -5,25 +5,27 @@
 
 	<parent>
 		<groupId>star</groupId>
-		<artifactId>star-boot</artifactId>
+		<artifactId>star-boot-base</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>star-boot-base</artifactId>
-	<packaging>pom</packaging>
+	<artifactId>star-boot-webapp</artifactId>
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
 			<groupId>star</groupId>
-			<artifactId>star-boot</artifactId>
-			<type>tar.gz</type>
-			<classifier>project</classifier>
+			<artifactId>star-boot-app</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 	</dependencies>
 
-	<modules>
-		<module>app</module>
-		<module>webapp</module>
-	</modules>
 
 </project>

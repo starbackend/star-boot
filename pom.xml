@@ -16,6 +16,8 @@
 
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
+		<cwatch-split.version>0.0.1-SNAPSHOT</cwatch-split.version>
+		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
 	</properties>
 
 	<dependencyManagement>

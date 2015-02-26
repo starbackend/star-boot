@@ -29,7 +29,7 @@
 			<groupId>org.jolokia</groupId>
 			<artifactId>jolokia-core</artifactId>
 		</dependency>
-	</dependencies>
 
+	</dependencies>
 
 </project>

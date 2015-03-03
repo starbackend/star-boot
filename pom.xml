@@ -21,6 +21,7 @@
 		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
 		<cwatch-sim.version>0.0.1-SNAPSHOT</cwatch-sim.version>
 		<imdate-cdf.version>0.0.2-SNAPSHOT</imdate-cdf.version>
+		<cwatch-geoserver.version>0.0.1-SNAPSHOT</cwatch-geoserver.version>
 	</properties>
 
 	<dependencyManagement>
@@ -47,6 +48,24 @@
 				<groupId>org.cwatch</groupId>
 				<artifactId>imdate-cdf-ver-0_5_8_1</artifactId>
 				<version>${imdate-cdf.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.cwatch</groupId>
+				<artifactId>cwatch-geoserver</artifactId>
+				<classifier>project</classifier>
+				<type>tar.gz</type>
+				<version>${cwatch-geoserver.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.cwatch</groupId>
+				<artifactId>cwatch-geoserver-core</artifactId>
+				<version>${cwatch-geoserver.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.cwatch</groupId>
+				<artifactId>cwatch-geoserver-testing</artifactId>
+				<version>${cwatch-geoserver.version}</version>
 			</dependency>
 			
 		</dependencies>

@@ -20,6 +20,7 @@
 		<cwatch-split.version>0.0.1-SNAPSHOT</cwatch-split.version>
 		<cwatch-service.version>0.0.1-SNAPSHOT</cwatch-service.version>
 		<cwatch-sim.version>0.0.1-SNAPSHOT</cwatch-sim.version>
+		<imdate-cdf.version>0.0.2-SNAPSHOT</imdate-cdf.version>
 	</properties>
 
 	<dependencyManagement>
@@ -41,6 +42,13 @@
 				<classifier>project</classifier>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>org.cwatch</groupId>
+				<artifactId>imdate-cdf-ver-0_5_8_1</artifactId>
+				<version>${imdate-cdf.version}</version>
+			</dependency>
+			
 		</dependencies>
 	</dependencyManagement>
 

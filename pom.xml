@@ -17,12 +17,13 @@
 
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
-		
+
 		<cwatch-split.version>0.0.1</cwatch-split.version>
 		<cwatch-service.version>0.0.1</cwatch-service.version>
 		<cwatch-geoserver.version>0.0.1</cwatch-geoserver.version>
 		<cwatch-sim.version>0.0.1</cwatch-sim.version>
 		<imdate-cdf.version>0.0.2</imdate-cdf.version>
+		<star-env.version>0.0.1</star-env.version>
 	</properties>
 
 	<dependencyManagement>
@@ -44,13 +45,13 @@
 				<classifier>project</classifier>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.cwatch</groupId>
 				<artifactId>imdate-cdf-ver-0_5_8_1</artifactId>
 				<version>${imdate-cdf.version}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.cwatch</groupId>
 				<artifactId>cwatch-geoserver</artifactId>
@@ -68,7 +69,13 @@
 				<artifactId>cwatch-geoserver-testing</artifactId>
 				<version>${cwatch-geoserver.version}</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>star</groupId>
+				<artifactId>star-env-defaults</artifactId>
+				<version>${star-env.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -111,7 +118,6 @@
 				<dependency>
 					<groupId>star</groupId>
 					<artifactId>star-env-defaults</artifactId>
-					<version>0.0.1-SNAPSHOT</version>
 				</dependency>
 			</dependencies>
 			<repositories>
@@ -148,7 +154,6 @@
 				<dependency>
 					<groupId>star</groupId>
 					<artifactId>star-boot-app</artifactId>
-					<version>0.0.1-SNAPSHOT</version>
 				</dependency>
 			</dependencies>
 			<properties>

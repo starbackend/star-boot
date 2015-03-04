@@ -9,7 +9,7 @@
 		<relativePath>../cwatch-boot/base/rpm</relativePath>
 	</parent>
 
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<groupId>star</groupId>
 	<artifactId>star-boot</artifactId>
 	<packaging>pom</packaging>
@@ -28,7 +28,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/starbackend/star-boot.git</connection>
 		<developerConnection>scm:git:https://github.com/starbackend/star-boot.git</developerConnection>
-		<tag>star-boot-0.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencyManagement>
@@ -36,19 +36,19 @@
 			<dependency>
 				<groupId>star</groupId>
 				<artifactId>star-boot-app</artifactId>
-				<version>0.0.1</version>
+				<version>0.0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>star</groupId>
 				<artifactId>star-boot-webapp</artifactId>
-				<version>0.0.1</version>
+				<version>0.0.2-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>star</groupId>
 				<artifactId>star-boot</artifactId>
 				<type>tar.gz</type>
 				<classifier>project</classifier>
-				<version>0.0.1</version>
+				<version>0.0.2-SNAPSHOT</version>
 			</dependency>
 
 			<dependency>

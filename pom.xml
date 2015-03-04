@@ -26,6 +26,12 @@
 		<star-env.version>0.0.1</star-env.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/starbackend/star-boot.git</connection>
+		<developerConnection>scm:git:https://github.com/starbackend/star-boot.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

@@ -17,7 +17,7 @@
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
 
-		<cwatch-split.version>0.0.2</cwatch-split.version>
+		<cwatch-split.version>0.0.3-SNAPSHOT</cwatch-split.version>
 		<cwatch-service.version>0.0.3-SNAPSHOT</cwatch-service.version>
 		<cwatch-geoserver.version>0.0.1</cwatch-geoserver.version>
 		<cwatch-sim.version>0.0.1</cwatch-sim.version>

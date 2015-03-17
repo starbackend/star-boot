@@ -22,7 +22,7 @@
 		<cwatch-geoserver.version>0.0.1</cwatch-geoserver.version>
 		<cwatch-sim.version>0.0.1</cwatch-sim.version>
 		<imdate-cdf.version>0.0.2</imdate-cdf.version>
-		<star-env.version>0.0.1</star-env.version>
+		<star-env.version>0.0.2-SNAPSHOT</star-env.version>
 	</properties>
 
 	<scm>

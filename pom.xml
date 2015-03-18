@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.cwatch</groupId>
 		<artifactId>cwatch-boot-rpm</artifactId>
-		<version>0.0.9-SNAPSHOT</version>
+		<version>0.0.9</version>
 		<relativePath>../cwatch-boot/base/rpm</relativePath>
 	</parent>
 
@@ -17,12 +17,12 @@
 	<properties>
 		<rpm.appname>${star-env.appname}</rpm.appname>
 
-		<cwatch-split.version>0.0.3-SNAPSHOT</cwatch-split.version>
-		<cwatch-service.version>0.0.3-SNAPSHOT</cwatch-service.version>
+		<cwatch-split.version>0.0.3</cwatch-split.version>
+		<cwatch-service.version>0.0.3</cwatch-service.version>
 		<cwatch-geoserver.version>0.0.1</cwatch-geoserver.version>
-		<cwatch-sim.version>0.0.1</cwatch-sim.version>
-		<imdate-cdf.version>0.0.2</imdate-cdf.version>
-		<star-env.version>0.0.2-SNAPSHOT</star-env.version>
+		<cwatch-sim.version>0.0.2</cwatch-sim.version>
+		<imdate-cdf.version>0.0.3</imdate-cdf.version>
+		<star-env.version>0.0.2</star-env.version>
 	</properties>
 
 	<scm>
